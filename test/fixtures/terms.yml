@@ -1,0 +1,27 @@
+# == Schema Information
+# Schema version: 20120128143322
+#
+# Table name: terms
+#
+#  id                :integer         not null, primary key
+#  name              :string(255)
+#  translated_term   :string(255)
+#  phonetic_spelling :string(255)
+#  definition        :string(255)
+#  created_at        :datetime        not null
+#  updated_at        :datetime        not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  translated_term: MyString
+  phonetic_spelling: MyString
+  definition: MyString
+
+two:
+  name: MyString
+  translated_term: MyString
+  phonetic_spelling: MyString
+  definition: MyString

@@ -1,0 +1,29 @@
+<h1>Listing terms</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Translated term</th>
+    <th>Phonetic spelling</th>
+    <th>Definition</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @terms.each do |term| %>
+  <tr>
+    <td><%= term.name %></td>
+    <td><%= term.translated_term %></td>
+    <td><%= term.phonetic_spelling %></td>
+    <td><%= term.definition %></td>
+    <td><%= link_to 'Show', term %></td>
+    <td><%= link_to 'Edit', edit_term_path(term) %></td>
+    <td><%= link_to 'Destroy', term, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Term', new_term_path %>

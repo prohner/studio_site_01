@@ -1,4 +1,12 @@
 StudioSite::Application.routes.draw do
+  resources :terms
+
+  resources :styles
+
+  resources :languages
+
+  resources :countries
+
   resources :studios
 
   # The priority is based upon order of creation:
