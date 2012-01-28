@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @studio.name %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @studio.address %>
+</p>
+
+
+<%= link_to 'Edit', edit_studio_path(@studio) %> |
+<%= link_to 'Back', studios_path %>
