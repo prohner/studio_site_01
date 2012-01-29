@@ -29,19 +29,14 @@ def make_studios
       terms = Faker::Lorem.words(rand(20))
       terms.each do |term|
         translated  = Faker::Lorem.words().first
-        definition  = Faker::Lorem.paragraph
+        definition  = Faker::Lorem.paragraph[0..255]
         Term.create!( :name             => term,
                       :translated_term  => translated,
                       :definition       => definition,
                       :style            => style
                       )
         puts "#{studio.name}: #{term}"
-        
-        #  name              :string(255)
-        #  translated_term   :string(255)
-        #  phonetic_spelling :string(255)
-        #  definition        :string(255)
-        
+                
       end
     end
   end
