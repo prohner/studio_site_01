@@ -27,7 +27,28 @@
   <%= @studio.fax %>
 </p>
 
- render :template => "styles/show", :locals => { :style => @studio.styles.first } 
+<h3>Styles </h3>
+<ol>
+<% @styles.each do |style| %>
+   <li>
+   <%= link_to style.name, edit_style_path(style) %>
+   <br />
+   <h4>Terminology</h4>
+   <dl>
+      <% style.terms.each do |term| %>
+         <dt>
+            <%= term.name %>
+            ==&gt;
+            <%= term.translated_term %>
+         </dt>
+         <dd>
+            <%= term.definition %>
+         </dd>
+      <% end %>
+   </dl>
+   </li>
+<% end %>
+</ol>
 
 <%= link_to 'Edit', edit_studio_path(@studio) %> |
 <%= link_to 'Back', studios_path %>

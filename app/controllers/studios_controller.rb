@@ -14,6 +14,7 @@ class StudiosController < ApplicationController
   # GET /studios/1.json
   def show
     @studio = Studio.find(params[:id])
+    @styles = @studio.styles
 
     respond_to do |format|
       format.html # show.html.erb

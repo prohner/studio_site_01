@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120129045843) do
+ActiveRecord::Schema.define(:version => 20120129172052) do
 
   create_table "countries", :force => true do |t|
     t.string   "name"
@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(:version => 20120129045843) do
     t.string   "postal_code"
     t.string   "phone"
     t.string   "fax"
+    t.string   "email"
   end
 
   create_table "styles", :force => true do |t|
@@ -53,6 +54,7 @@ ActiveRecord::Schema.define(:version => 20120129045843) do
     t.string   "definition"
     t.datetime "created_at",        :null => false
     t.datetime "updated_at",        :null => false
+    t.integer  "style_id"
   end
 
 end

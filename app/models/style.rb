@@ -14,4 +14,6 @@
 class Style < ActiveRecord::Base
   belongs_to :country
   belongs_to :studio
+  
+  has_many :terms
 end
