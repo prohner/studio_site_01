@@ -27,7 +27,7 @@
   <%= @studio.fax %>
 </p>
 
-<%= render :template => "styles/show", :locals => { :style => @studio.styles.first } %>
+ render :template => "styles/show", :locals => { :style => @studio.styles.first } 
 
 <%= link_to 'Edit', edit_studio_path(@studio) %> |
 <%= link_to 'Back', studios_path %>
