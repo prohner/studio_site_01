@@ -9,7 +9,6 @@ group :development, :test do
   gem 'sqlite3', '1.3.5'
   gem 'rspec-rails', '2.8.1'
   gem 'annotate-models', '1.0.4'
-  gem 'faker', '0.3.1'
 end
 group :production do
   gem 'pg'
@@ -18,6 +17,7 @@ end
 group :test do
   gem 'capybara', '1.1.2'
 end
+gem 'faker', '0.3.1'
 
 gem "rake"
 
