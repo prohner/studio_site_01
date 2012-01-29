@@ -8,6 +8,23 @@
 <p>
   <b>Address:</b>
   <%= @studio.address %>
+  <br/>
+  <%= @studio.address2 %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= studio_city_state_postal(@studio)  %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @studio.phone %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @studio.fax %>
 </p>
 
 

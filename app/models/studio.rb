@@ -18,5 +18,4 @@
 
 class Studio < ActiveRecord::Base
   has_many :styles
-  has_many :terms
 end
