@@ -14,4 +14,6 @@
 
 class Term < ActiveRecord::Base
   belongs_to :style
+  
+   validates :definition, :length => { :maximum => 255 }
 end
