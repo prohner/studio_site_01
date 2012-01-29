@@ -1,13 +1,9 @@
 class ChangeDataTypeForTermDefinition < ActiveRecord::Migration
   def up
-    change_table :terms do |t|
-      t.change :definition, :text
-    end
+    change_column :terms, :definition, :text
   end
 
   def down
-    change_table :terms do |t|
-      t.change :definition, :string
-    end
+    change_column :terms, :definition, :string
   end
 end
