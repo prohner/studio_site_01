@@ -9,9 +9,9 @@ end
 
 def make_studios
   5.times do |n|
-    studio  = Studio.create!( :name => "Studio of " + Faker::Name.name)
+    studio  = Studio.create!( :name => "Studio: " + Faker::Name.name)
     country = Country.create!(:name => "Country: " + Faker::Name.name)
-    style   = Style.create!(:name => "Style " + Faker::Name.name,
+    style   = Style.create!(:name => "Style: " + Faker::Name.name,
                             :country => country,
                             :studio => studio)
     
