@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20120128143322
+# Schema version: 20120129045843
 #
 # Table name: styles
 #
@@ -7,6 +7,8 @@
 #  name       :string(255)
 #  created_at :datetime        not null
 #  updated_at :datetime        not null
+#  country_id :integer
+#  studio_id  :integer
 #
 
 class Style < ActiveRecord::Base
