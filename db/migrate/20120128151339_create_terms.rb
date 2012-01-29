@@ -4,7 +4,7 @@ class CreateTerms < ActiveRecord::Migration
       t.string :name
       t.string :translated_term
       t.string :phonetic_spelling
-      t.string :definition
+      t.text :definition
 
       t.timestamps
     end
