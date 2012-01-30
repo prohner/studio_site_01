@@ -35,7 +35,7 @@ def make_studios
                       :definition       => definition,
                       :style            => style
                       )
-        puts "#{studio.name}: #{term}"
+        #puts "#{studio.name}: #{term}"
                 
       end
     end

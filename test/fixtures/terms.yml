@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20120128143322
+# Schema version: 20120130050951
 #
 # Table name: terms
 #
@@ -7,9 +7,10 @@
 #  name              :string(255)
 #  translated_term   :string(255)
 #  phonetic_spelling :string(255)
-#  definition        :string(255)
+#  definition        :text
 #  created_at        :datetime        not null
 #  updated_at        :datetime        not null
+#  style_id          :integer
 #
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
